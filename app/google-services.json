@@ -1,0 +1,193 @@
+{
+  "project_info": {
+    "project_number": "79562431272",
+    "project_id": "jsfoodi-4b096",
+    "storage_bucket": "jsfoodi-4b096.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:79562431272:android:9b62d90ae22d5332520e1d",
+        "android_client_info": {
+          "package_name": "bugfix.itsolutions.jsdelivery"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "79562431272-6adolpfnj37qd7fg1mnq171cm4c9pq0q.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "bugfix.itsolutions.jsdelivery",
+            "certificate_hash": "8a918f0fe076992a2958f9c4e83e6b19a08c5464"
+          }
+        },
+        {
+          "client_id": "79562431272-k02k001fvl260v6enrss1tedd6a3bian.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "bugfix.itsolutions.jsdelivery",
+            "certificate_hash": "d30f73ba0f29487dcdb3efac20d37c91c34f8a50"
+          }
+        },
+        {
+          "client_id": "79562431272-p4k210nhaq7cjb83h63edu1mdfvkopjc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "bugfix.itsolutions.jsdelivery",
+            "certificate_hash": "90672c5ad6340538a5d4a7e6628496d3d5981008"
+          }
+        },
+        {
+          "client_id": "79562431272-tb7siiu81p2ptdv4n1l5kkqm07o9lin8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "bugfix.itsolutions.jsdelivery",
+            "certificate_hash": "f303f7ba28a69da7ec60b2f395531f1ac3307114"
+          }
+        },
+        {
+          "client_id": "79562431272-urj0tn8upbva59u0o1cjn07kcbv4i3sj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "bugfix.itsolutions.jsdelivery",
+            "certificate_hash": "d561f2647c60a75e7fccac14b6afc8eebbc184a3"
+          }
+        },
+        {
+          "client_id": "79562431272-8175rkdcjeaecuh6rtsb6m0dovb9raf6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCjHg2y9KQ3MrbUPJq4y1SlJT75OelQnis"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "79562431272-8175rkdcjeaecuh6rtsb6m0dovb9raf6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:79562431272:android:296f8be1a5c01804520e1d",
+        "android_client_info": {
+          "package_name": "bugfix.itsolutions.jsfoodi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "79562431272-26khsrv21vbcn0103hjn16pf49bhllsj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "bugfix.itsolutions.jsfoodi",
+            "certificate_hash": "f303f7ba28a69da7ec60b2f395531f1ac3307114"
+          }
+        },
+        {
+          "client_id": "79562431272-92oh4fu01n1u26275fii6anrcq979uaj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "bugfix.itsolutions.jsfoodi",
+            "certificate_hash": "d30f73ba0f29487dcdb3efac20d37c91c34f8a50"
+          }
+        },
+        {
+          "client_id": "79562431272-im5ht1cqm57rgt467sn17fglklk2ed4k.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "bugfix.itsolutions.jsfoodi",
+            "certificate_hash": "d561f2647c60a75e7fccac14b6afc8eebbc184a3"
+          }
+        },
+        {
+          "client_id": "79562431272-tkslgkoebdbf9r7ptel01qn7u72e66li.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "bugfix.itsolutions.jsfoodi",
+            "certificate_hash": "90672c5ad6340538a5d4a7e6628496d3d5981008"
+          }
+        },
+        {
+          "client_id": "79562431272-8175rkdcjeaecuh6rtsb6m0dovb9raf6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCjHg2y9KQ3MrbUPJq4y1SlJT75OelQnis"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "79562431272-8175rkdcjeaecuh6rtsb6m0dovb9raf6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:79562431272:android:a0fa9114b5035d2a520e1d",
+        "android_client_info": {
+          "package_name": "bugfix.itsolutions.jsrestaurant"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "79562431272-i01himqrbkcg4lu0e4v792gr05k61q55.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "bugfix.itsolutions.jsrestaurant",
+            "certificate_hash": "f303f7ba28a69da7ec60b2f395531f1ac3307114"
+          }
+        },
+        {
+          "client_id": "79562431272-mrk6hpd6tdubbpnlqshp3cmlsbf6uc8g.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "bugfix.itsolutions.jsrestaurant",
+            "certificate_hash": "1052807f2469d6a6375ba6a5f389130da1ba0174"
+          }
+        },
+        {
+          "client_id": "79562431272-pr6ci2gn6vkts2rmsbs6uj5827237otd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "bugfix.itsolutions.jsrestaurant",
+            "certificate_hash": "d561f2647c60a75e7fccac14b6afc8eebbc184a3"
+          }
+        },
+        {
+          "client_id": "79562431272-8175rkdcjeaecuh6rtsb6m0dovb9raf6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCjHg2y9KQ3MrbUPJq4y1SlJT75OelQnis"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "79562431272-8175rkdcjeaecuh6rtsb6m0dovb9raf6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

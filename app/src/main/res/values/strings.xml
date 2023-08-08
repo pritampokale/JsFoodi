@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">jsfoodi</string>
+
+    <string name="termsandconditions">By Continuing. you agree to our terms of Service Privacy Policy and Content Policy</string>
+    <string name="textOtpVer">OTP Verification</string>
+    <string name="trending">Trending</string>
+    <string name="razorpay">rzp_test_HN20Icxnj3WERz</string>
+
+    <string name="wallet_buy_button_place_holder">Buy with Google</string>
+    <string name="write_a_review">Write a review</string>
+    <string name="your_cart_is_empty">Your cart is empty</string>
+    <string name="your_orders">Your Orders</string>
+    <string name="getStarted">Get Started</string>
+    <string name="descLogin">Enter your phone number and we will send you an OTP to verify you.</string>
+    <string name="descMobile">Mobile No.</string>
+    <string name="chip_text">Chip text</string>
+    <string name="choose_your_payment_method">Choose Your Payment Method</string>
+    <string name="no_result_found">Results not found</string>
+    <string name="mobileHint">Phone Number *</string>
+
+    <string name="moreYourself">Tell us a bit more about Yourself</string>
+    <string name="logOutText">Log Out</string>
+    <string name="loginBtnText">Send OTP</string>
+    <string name="review_hint">Write your thoughts about the restaurant</string>
+    <string name="search_hint">Search…</string>
+    <string name="search_menu_title">Search</string>
+    <string name="select_country">Select a country</string>
+    <string name="select_source">Select source</string>
+    <string name="smile_rating_bad">Bad</string>
+    <string name="smile_rating_good">Good</string>
+    <string name="smile_rating_great">Great</string>
+    <string name="smile_rating_okay">Okay</string>
+    <string name="smile_rating_terrible">Terrible</string>
+    <string name="status_bar_notification_info_overflow">999+</string>
+
+</resources>

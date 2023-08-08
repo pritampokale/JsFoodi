@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="30dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/open_sans_semibold"
+        android:text="@string/moreYourself"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:textSize="22sp" />
+
+    <EditText
+        android:id="@+id/userName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/userinfo_background"
+        android:fontFamily="@font/open_sans"
+        android:hint="Name *"
+        android:inputType="textPersonName"
+        android:textColor="@color/colorAccent"
+        android:textSize="19sp" />
+
+    <EditText
+        android:id="@+id/userEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/userinfo_background"
+        android:fontFamily="@font/open_sans"
+        android:hint="Email *"
+        android:inputType="textEmailAddress"
+        android:text="no"
+        android:textColor="@color/colorAccent"
+        android:textSize="19sp"
+        android:visibility="gone" />
+
+    <EditText
+        android:id="@+id/userAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/userinfo_background"
+        android:fontFamily="@font/open_sans"
+        android:hint="Your Address *"
+        android:inputType="textEmailAddress"
+        android:text="no"
+        android:textColor="@color/colorAccent"
+        android:textSize="19sp"
+        android:visibility="gone" />
+
+    <EditText
+        android:id="@+id/userPincode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/userinfo_background"
+        android:fontFamily="@font/open_sans"
+        android:hint="Your Pincode *"
+        android:inputType="textEmailAddress"
+        android:text="no"
+        android:textColor="@color/colorAccent"
+        android:textSize="19sp"
+        android:visibility="gone" />
+
+    <EditText
+        android:id="@+id/userCity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/userinfo_background"
+        android:fontFamily="@font/open_sans"
+        android:hint="Your City *"
+        android:inputType="textEmailAddress"
+        android:text="no"
+        android:textColor="@color/colorAccent"
+        android:textSize="19sp"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/addInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="21dp"
+        android:background="@drawable/login_btn_background"
+        android:fontFamily="@font/open_sans_semibold"
+        android:text="Save"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+</LinearLayout>

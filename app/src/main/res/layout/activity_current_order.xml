@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:mapbox="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue_grey">
+
+    <include
+        android:id="@+id/currentOrderToolBar"
+        layout="@layout/custom_current_order_toolbar" />
+
+    <fragment
+        android:id="@+id/maps"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/currentOrderToolBar"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="0dp" />
+
+    <WebView
+        android:id="@+id/web"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/orderTimerContainer"
+        android:layout_below="@+id/currentOrderToolBar"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="-110dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="-52dp" />
+
+    <RelativeLayout
+        android:id="@+id/orderTimerContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/arrivingInId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="21dp"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/open_sans"
+            android:text="ARRIVING ON"
+            android:textColor="@color/grey"
+            android:textSize="13sp" />
+
+        <ir.samanjafari.easycountdowntimer.EasyCountDownTextview
+            android:id="@+id/easyCountDownTextview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/arrivingInId"
+            android:layout_marginStart="21dp"
+            android:layout_marginTop="3dp"
+            mapbox:colonColor="@color/grey"
+            mapbox:digitBackground="@color/white"
+            mapbox:setAnimation="true"
+            mapbox:showDays="false"
+            mapbox:showHours="false"
+            mapbox:textColor="@color/gray"
+            mapbox:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/timeLeftText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/arrivingInId"
+            android:layout_alignStart="@+id/arrivingInId"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="3dp"
+            android:fontFamily="@font/open_sans_semibold"
+            android:textColor="@color/gray"
+            android:textSize="17sp" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="21dp"
+            android:scaleType="centerCrop"
+            mapbox:lottie_autoPlay="true"
+            mapbox:lottie_loop="true"
+            mapbox:lottie_rawRes="@raw/delivery" />
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="0.2dp"
+            android:layout_below="@+id/easyCountDownTextview"
+            android:layout_marginStart="21dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="21dp"
+            android:layout_marginBottom="8dp"
+            android:background="@android:color/darker_gray" />
+
+        <TextView
+            android:id="@+id/currentOrderResName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/divider"
+            android:layout_marginStart="21dp"
+            android:layout_marginTop="7dp"
+            android:fontFamily="@font/open_sans_semibold"
+            android:textColor="@color/colorAccent"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/currentOrderResLoc"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_below="@+id/currentOrderResName"
+            android:layout_alignStart="@+id/easyCountDownTextview"
+            android:layout_marginStart="0dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="12dp"
+            android:layout_toStartOf="@+id/callResBtn"
+            android:fontFamily="@font/open_sans"
+            android:text="Near Jyoti gas agency, Partur"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/callResBtn"
+            android:layout_width="75dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/divider"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="7dp"
+            android:layout_marginEnd="21dp"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/get_location_button_background"
+            android:drawableStart="@drawable/call_res"
+            android:fontFamily="@font/open_sans_semibold"
+            android:text="Call"
+            android:textAllCaps="false"
+            android:textColor="@color/colorPrimary"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/orderTimerContainer"
+        android:layout_below="@+id/currentOrderToolBar"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="0dp"
+        android:visibility="gone"
+        mapbox:srcCompat="@drawable/waitingdel_1" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/orderTimerContainer"
+        android:layout_alignTop="@+id/orderTimerContainer"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="-118dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="0dp"
+        android:text="Waiting For Delivery Boy"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:visibility="gone" />
+</RelativeLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="black">#000000</color>
+    <color name="blue">#1e88e5</color>
+    <color name="blue_grey">#eceff1</color>
+
+    <color name="colorAccent">#2d2d2d</color>
+    <color name="colorPrimary">#ff1744</color>
+    <color name="colorPrimaryDark">#ff1744</color>
+    <color name="colorText">#ffffff</color>
+    <color name="defaultBorderFlagColor">@android:color/transparent</color>
+    <color name="defaultContentColor">@android:color/black</color>
+
+    <color name="error_color_material_dark">#ff7043</color>
+    <color name="error_color_material_light">#ff5722</color>
+    <color name="foreground_material_dark">@android:color/white</color>
+    <color name="foreground_material_light">@android:color/black</color>
+
+    <color name="golden">#f5c82f</color>
+    <color name="gray">#424242</color>
+    <color name="green">#67bd46</color>
+    <color name="grey">#a9a9a9</color>
+
+
+    <color name="pressed_bg">#64b7b7b7</color>
+
+    <color name="red">#ff5252</color>
+
+
+    <color name="switch_thumb_disabled_material_dark">#ff616161</color>
+
+    <color name="test">#221224</color>
+
+    <color name="transparent">#00000000</color>
+
+    <color name="white">#ffffff</color>
+</resources>

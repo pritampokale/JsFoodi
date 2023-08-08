@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/con"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/foodMark"
+        android:layout_width="13dp"
+        android:layout_height="13dp"
+        android:layout_marginTop="19dp"
+        android:src="@drawable/veg_symbol" />
+
+    <TextView
+        android:id="@+id/menuItemName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="10dp"
+        android:layout_toEndOf="@+id/foodMark"
+        android:fontFamily="@font/open_sans_semibold"
+        android:text="testing"
+        android:textColor="@color/colorAccent"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/menuItemCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/menuItemName"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="5dp"
+        android:layout_toEndOf="@+id/foodMark"
+        android:fontFamily="@font/open_sans"
+        android:text="testing"
+        android:textColor="@color/gray"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/menuItemPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/menuItemCategory"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="25dp"
+        android:layout_toStartOf="@+id/imageView"
+        android:layout_toEndOf="@+id/foodMark"
+        android:fontFamily="@font/open_sans"
+        android:text="testing"
+        android:textColor="@color/colorAccent"
+        android:textSize="13sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/menuItemPrice"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="3dp"
+        android:fontFamily="@font/open_sans"
+        android:text="* Item not available"
+        android:textSize="12sp"
+        android:textStyle="italic"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/addMenuItemBtn"
+        android:layout_width="80dp"
+        android:layout_height="32dp"
+        android:layout_alignStart="@+id/imageView"
+        android:layout_alignTop="@+id/imageView"
+        android:layout_alignEnd="@+id/imageView"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="98dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/menu_item_add_btn_background"
+        android:fontFamily="@font/open_sans"
+        android:text="Add +"
+        android:textAllCaps="false"
+        android:textColor="#4caf50"
+        android:textSize="16sp"
+        android:visibility="visible" />
+
+    <Button
+        android:id="@+id/removeMenuItemBtn"
+        android:layout_width="80dp"
+        android:layout_height="32dp"
+        android:layout_alignStart="@+id/imageView"
+        android:layout_alignTop="@+id/imageView"
+        android:layout_alignEnd="@+id/imageView"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="98dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/menu_item_remove_btn"
+        android:fontFamily="@font/open_sans"
+        android:text="Remove -"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="13sp"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="140dp"
+        android:layout_height="120dp"
+        android:layout_alignTop="@+id/menuItemName"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="10dp"
+        app:srcCompat="@drawable/ic_baseline_favorite_24" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/menuItemPrice"
+        android:layout_alignStart="@+id/menuItemPrice"
+        android:layout_alignEnd="@+id/menuItemPrice"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="0dp"
+        android:text="" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_below="@+id/imageView"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:background="#635f5f" />
+</RelativeLayout>

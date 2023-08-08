@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="27dp">
+
+    <TextView
+        android:id="@+id/userProfileName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/open_sans_semibold"
+        android:textColor="@color/colorAccent"
+        android:textSize="19sp" />
+
+    <TextView
+        android:id="@+id/userProfileNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/userProfileName"
+        android:layout_marginTop="1dp"
+        android:fontFamily="@font/open_sans"
+        android:textColor="@color/gray"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/userProfileAddressText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/userProfileNumber"
+        android:layout_marginTop="7dp"
+        android:fontFamily="@font/open_sans_semibold"
+        android:text="Delivering To:"
+        android:textColor="@color/colorAccent"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/userProfileAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/userProfileAddressText"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="0dp"
+        android:layout_toStartOf="@+id/userProfileImage"
+        android:fontFamily="@font/open_sans"
+        android:textColor="@color/gray"
+        android:textSize="14sp" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/userProfileImage"
+        android:layout_width="82dp"
+        android:layout_height="82dp"
+        android:layout_alignParentEnd="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/user_placeholder" />
+
+    <ImageView
+        android:id="@+id/dottedDivider"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_below="@+id/userProfileAddress"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="11dp"
+        android:layerType="software"
+        android:src="@drawable/dotted_divider" />
+
+    <LinearLayout
+        android:id="@+id/settingsContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dottedDivider"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <ImageView
+            android:id="@+id/myOrdersImage"
+            android:layout_width="0dp"
+            android:layout_height="32dp"
+            android:layout_weight="1"
+            android:src="@drawable/orders" />
+
+        <ImageView
+            android:id="@+id/changeAddressImage"
+            android:layout_width="0dp"
+            android:layout_height="32dp"
+            android:layout_weight="1"
+            android:src="@drawable/address_book" />
+
+        <ImageView
+            android:id="@+id/editProfile"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/cart_icon" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/settingsTextContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/settingsContainer"
+        android:layout_marginTop="3dp"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/open_sans"
+            android:gravity="center"
+            android:text="Orders"
+            android:textColor="@color/gray"
+            android:textSize="13sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/open_sans"
+            android:gravity="center"
+            android:text="Change Address"
+            android:textColor="@color/gray"
+            android:textSize="13sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/open_sans"
+            android:gravity="center"
+            android:text="My Cart"
+            android:textColor="@color/gray"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/dottedDivider1"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_below="@+id/settingsTextContainer"
+        android:layout_marginTop="17dp"
+        android:layout_marginBottom="11dp"
+        android:layerType="software"
+        android:src="@drawable/dotted_divider" />
+
+    <TextView
+        android:id="@+id/logOutText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dottedDivider1"
+        android:drawableEnd="@drawable/logout_icon"
+        android:fontFamily="@font/open_sans"
+        android:text="@string/logOutText"
+        android:textColor="@color/colorAccent"
+        android:textSize="19sp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/logOutText"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="0dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/recv"
+        android:layout_below="@+id/logOutText"
+        android:layout_alignStart="@+id/recv"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="-40dp"
+        android:text="Orders Need to Complete"
+        android:textColor="@color/colorAccent"
+        android:textSize="15sp"
+        app:fontFamily="@font/open_sans_bold" />
+</RelativeLayout>

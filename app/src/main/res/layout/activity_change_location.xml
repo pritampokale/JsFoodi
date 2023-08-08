@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:mapbox="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <fragment
+        android:id="@+id/maps"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/locationContainer"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="0dp" />
+
+    <RelativeLayout
+        android:id="@+id/locationContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="17dp">
+
+        <TextView
+            android:id="@+id/locationText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/open_sans_bold"
+            android:text="Delivery Location"
+            android:textColor="@color/colorAccent"
+            android:textSize="21sp" />
+
+        <EditText
+            android:id="@+id/locationActualText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/locationText"
+            android:layout_marginTop="7dp"
+            android:background="@drawable/menu_item_add_btn_background"
+            android:fontFamily="@font/open_sans"
+            android:hint="Add Address"
+            android:padding="11dp"
+            android:textColor="@color/gray"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/locationPincode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/locationActualText"
+            android:layout_marginTop="7dp"
+            android:background="@drawable/menu_item_add_btn_background"
+            android:fontFamily="@font/open_sans"
+            android:hint="Area Pincode"
+            android:padding="11dp"
+            android:textColor="@color/gray"
+            android:textSize="16sp"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/saveLocationBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/locationPincode"
+            android:layout_marginTop="17dp"
+            android:background="@color/colorPrimary"
+            android:fontFamily="@font/open_sans"
+            android:text="Confirm Address"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="17sp" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/saveLocationBtn3"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_alignBottom="@+id/maps"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="12dp"
+        android:background="#3F51B5"
+        android:fontFamily="@font/open_sans"
+        android:text="Fetch Current Location"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+    <SearchView
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/bg_search"
+        android:elevation="5dp"
+        android:ems="10"
+        android:iconifiedByDefault="false"
+        android:inputType="textPersonName"
+        android:queryHint="Search Here"
+        android:text="Name" />
+</RelativeLayout>
